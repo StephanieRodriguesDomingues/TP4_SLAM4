@@ -20,6 +20,7 @@ import javax.swing.JTextField;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
 public class PhotoDB extends JFrame {
+	//définition des variables
 	JButton btnAjouter;
 	JButton btnParcourir;
 	JButton btnSupprimer;
@@ -30,7 +31,9 @@ public class PhotoDB extends JFrame {
 	String s;
 	
 	public PhotoDB() {
+		//ajout d'un titre à notre fenêtre
 		super("Insérer une photo dans une base de données");
+		
 		this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		btnAjouter = new JButton("Ajouter");
 		btnAjouter.setBounds(200, 300, 100, 40);
@@ -94,7 +97,7 @@ public class PhotoDB extends JFrame {
 				}
 			}
 		});
-		
+		//ajout des différents composants à la fenêtre
 		this.add(label);
 		this.add(txtId);
 		this.add(textNom);
